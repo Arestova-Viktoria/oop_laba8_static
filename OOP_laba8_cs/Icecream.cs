@@ -8,6 +8,8 @@ namespace OOP_laba8_cs
 {
     class Icecream
     {
+        private static int id_gener = 1;
+        private int id;
         private String name;
         private String country;
         private int massa;
@@ -161,6 +163,18 @@ namespace OOP_laba8_cs
         public static Icecream operator ++(Icecream ice1)
         {
             return new Icecream { Massa = ice1.massa + 1 };
+        }
+
+        //создание уникального ID с помощью статической переменной id_generator
+        public int get_id()
+        {
+            id = id_gener++;
+            return id;
+        }
+        //статический метод для получения значения текущего ID без создания объекта класса
+        public static int get_id_now()
+        {
+            return id_gener;
         }
     }
 }

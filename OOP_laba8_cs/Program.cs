@@ -71,7 +71,13 @@ namespace OOP_laba8_cs
             Console.WriteLine($"Префиксная инкрементация: {(++ice).Massa}");
             Console.WriteLine($"Постфиксная инкрементация: {(ice++).Massa}");
 
-            
+            //демнотрация использования статических полей для получения идентификатора каждого объекта
+            Console.WriteLine($"ID second object: {ice.get_id()}");
+            Console.WriteLine($"ID second object: {ice_2.get_id()}");
+
+            //демонстрация использования статического метода для получения текущего (свободного)
+            Console.WriteLine($"Now ID (free ID): {Icecream.get_id_now()}");
+
             Console.ReadKey();
         }
 
