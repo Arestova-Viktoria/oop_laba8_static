@@ -32,5 +32,6 @@ public class Main {
 
         //демонстрация использования статического метода для получения текущего (свободного) идентификатора
         System.out.println("Now ID (free ID): "+Icecream.get_id_now()+"\n");
+        
     }
 }
